@@ -1,8 +1,7 @@
 ---
 layout: default
-title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
+# Hi, I'm Daniel
 
-Start developing your Jekyll website.
+I'm a Backend Developer from Denmark.
