@@ -4,3 +4,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-indigo-400
+           visited:text-neutral-400
+           focus:bg-indigo-400 focus:text-white
+           hover:bg-indigo-400 hover:text-white
+           active:bg-red-400 active:text-white
+           dark:text-teal-300
+           dark:visited:text-neutral-500
+           dark:focus:bg-teal-300 dark:focus:text-black
+           dark:hover:bg-teal-300 dark:hover:text-black
+           dark:active:bg-yellow-200 dark:active:text-black;
+  }
+}
