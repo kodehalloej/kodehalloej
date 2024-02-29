@@ -18,4 +18,12 @@
            dark:hover:bg-teal-300 dark:hover:text-black
            dark:active:bg-yellow-200 dark:active:text-black;
   }
+
+  h1 {
+    @apply my-4 text-4xl font-medium text-red-800 dark:text-lime-300;
+  }
+
+  p {
+    @apply my-4;
+  }
 }
