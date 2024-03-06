@@ -7,20 +7,20 @@
 
 @layer base {
   a {
-    @apply text-indigo-400
-           visited:text-neutral-400
-           focus:bg-indigo-400 focus:text-white
-           hover:bg-indigo-400 hover:text-white
-           active:bg-red-400 active:text-white
-           dark:text-teal-300
-           dark:visited:text-neutral-500
-           dark:focus:bg-teal-300 dark:focus:text-black
-           dark:hover:bg-teal-300 dark:hover:text-black
-           dark:active:bg-yellow-200 dark:active:text-black;
+    @apply text-blue-light
+           visited:text-grey-light
+           focus:bg-blue-light focus:text-white
+           hover:bg-blue-light hover:text-white
+           active:bg-red-light active:text-white
+           dark:text-cyan
+           dark:visited:text-grey
+           dark:focus:bg-cyan dark:focus:text-black
+           dark:hover:bg-cyan dark:hover:text-black
+           dark:active:bg-yellow dark:active:text-black;
   }
 
   h1 {
-    @apply my-4 text-4xl font-medium text-red-800 dark:text-lime-300;
+    @apply my-4 text-4xl font-medium text-red dark:text-green-light;
   }
 
   p {
