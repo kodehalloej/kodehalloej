@@ -3,25 +3,21 @@ layout: default
 ---
 
 <div class="flex flex-1 items-center">
-  <article class="mx-auto max-w-screen-md p-6 text-center">
-    <div class="leading-[0] my-3">
-      <img src="{{ '/assets/img/profile-picture-1000x1000.webp' | relative_url }}" alt="Daniel Møller Kristensen" class="mx-auto w-[250px] rounded-full dark:grayscale">
+  <article class="mx-auto max-w-screen-sm p-1 text-center">
+    <div class="mb-0.5">
+      <img src="{{ '/assets/img/profile-picture-1000x1000.webp' | relative_url }}" alt="Daniel Møller Kristensen" class="mx-auto h-9 rounded-full dark:grayscale">
     </div>
-    <h1>Hi, I'm Daniel</h1>
-    <p>I'm a Backend Developer from Denmark.</p>
-    <ul class="text-4xl my-[0.9375rem]">
-      <li class="mx-1.5 inline-block first:ml-0 last:mr-0">
+    <h1 class="mb-0.5 text-4xl font-medium tracking-tight text-red dark:text-green-light">Hi, I'm Daniel</h1>
+    <p class="mb-0.75 text-lg">I'm a Backend Developer from Denmark. I specialize in Sitecore, Umbraco and .NET in general.</p>
+    <ul class="mb-0.5 flex justify-center gap-0.75 text-3xl">
+      <li>
         <a href="https://github.com/kodehalloej/" class="focus:bg-transparent hover:bg-transparent active:bg-transparent">
-          <span>
-            {% include github.svg class="fill-black-ish h-[1em] relative w-[1em] top-[0.125em] inline align-baseline dark:fill-white-ish" %}
-          </span>
+          {% include github.svg class="h-1.5 fill-black-ish dark:fill-white-ish" %}
         </a>
       </li>
-      <li class="mx-1.5 inline-block first:ml-0 last:mr-0">
+      <li>
         <a href="https://www.linkedin.com/in/kodehalloej/" class="focus:bg-transparent hover:bg-transparent active:bg-transparent">
-          <span>
-            {% include linkedin.svg class="fill-black-ish h-[1em] relative w-[1em] top-[0.125em] inline align-baseline dark:fill-white-ish" %}
-          </span>
+          {% include linkedin.svg class="h-1.5 fill-black-ish dark:fill-white-ish" %}
         </a>
       </li>
     </ul>

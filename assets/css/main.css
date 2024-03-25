@@ -36,12 +36,4 @@
            dark:hover:bg-cyan dark:hover:text-black
            dark:active:bg-yellow dark:active:text-black;
   }
-
-  h1 {
-    @apply my-4 text-4xl font-medium text-red dark:text-green-light;
-  }
-
-  p {
-    @apply my-4;
-  }
 }
