@@ -10,16 +10,13 @@ layout: default
     <h1 class="mb-0.5 text-4xl font-medium tracking-tight text-red dark:text-green-light">Hi, I'm Daniel</h1>
     <p class="mb-0.75 text-lg">I'm a Backend Developer from Denmark. I specialize in Sitecore, Umbraco and .NET in general.</p>
     <ul class="mb-0.5 flex justify-center gap-0.75 text-3xl">
-      <li>
-        <a href="https://github.com/kodehalloej/" class="focus:bg-transparent hover:bg-transparent active:bg-transparent">
-          {% include github.svg class="h-1.5 fill-black-ish dark:fill-white-ish" %}
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/kodehalloej/" class="focus:bg-transparent hover:bg-transparent active:bg-transparent">
-          {% include linkedin.svg class="h-1.5 fill-black-ish dark:fill-white-ish" %}
-        </a>
-      </li>
+      {% for social in site.data.socials %}
+        <li>
+          <a href="{{ social.url }}" class="focus:bg-transparent hover:bg-transparent active:bg-transparent">
+            {% include {{ social.name | downcase }}.svg class="h-1.5 fill-black-ish dark:fill-white-ish" %}
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </article>
 </div>
