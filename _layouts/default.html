@@ -12,17 +12,17 @@
     </title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
-  <body class="flex min-h-screen flex-col bg-white-ish text-base text-black-ish dark:bg-black-ish dark:text-white-ish">
+  <body class="flex min-h-screen flex-col bg-off-white text-base text-off-black dark:bg-off-black dark:text-off-white">
     <div>
       <header class="mx-auto flex max-w-screen-xl items-center justify-between p-1">
         <a href="{% link index.html %}" class="focus:bg-transparent hover:bg-transparent active:bg-transparent">
-          {% include kodehalloej.svg path="h-1.5 fill-black-ish dark:fill-white-ish" dot="fill-red dark:fill-green-light" %}
+          {% include kodehalloej.svg path="h-1.5 fill-off-black dark:fill-off-white" dot="fill-red dark:fill-green-light" %}
         </a>
         <nav>
           <ul class="flex gap-1 font-medium">
             {% for i in (1..3) %}
               <li>
-                <a href="/{{ i }}" class="text-black-ish visited:text-black-ish focus:text-white hover:text-white active:text-white dark:text-white-ish dark:visited:text-white-ish dark:focus:text-black dark:hover:text-black dark:active:text-black">
+                <a href="/{{ i }}" class="text-off-black visited:text-off-black focus:text-white hover:text-white active:text-white dark:text-off-white dark:visited:text-off-white dark:focus:text-black dark:hover:text-black dark:active:text-black">
                   Page {{ i }}
                 </a>
               </li>

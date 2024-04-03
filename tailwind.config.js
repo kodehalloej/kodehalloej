@@ -14,14 +14,10 @@ module.exports = {
     colors: {
       transparent: colors.transparent,
       current: colors.current,
-      black: {
-        ish: colors.neutral[800],
-        DEFAULT: colors.black
-      },
-      white: {
-        DEFAULT: colors.white,
-        ish: colors.neutral[100]
-      },
+      "off-black": colors.neutral[800],
+      "off-white": colors.neutral[100],
+      black: colors.black,
+      white: colors.white,
       red: {
         light: colors.red[400],
         DEFAULT: colors.red[800]
