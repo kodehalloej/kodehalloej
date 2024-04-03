@@ -66,6 +66,11 @@ module.exports = {
       "3xl": ["2.3125rem", "2.75rem"],
       "4xl": ["2.8125rem", "3.125rem"],
       "5xl": ["3.375rem", "3.75rem"]
+    },
+    lineHeight: {
+      "sm-tight": "1.375rem",
+      "sm-normal": "1.5rem",
+      "sm-loose": "1.75rem"
     }
   },
   plugins: []
