@@ -14,7 +14,7 @@
   </head>
   <body class="flex min-h-screen flex-col bg-off-white text-base text-off-black dark:bg-off-black dark:text-off-white">
     <div>
-      <header class="mx-auto flex max-w-screen-xl items-center justify-between p-1">
+      <header class="mx-auto flex max-w-screen-lg items-center justify-between p-1">
         <a href="{% link index.html %}" class="focus:bg-transparent hover:bg-transparent active:bg-transparent">
           {% include kodehalloej.svg path="h-1.5 fill-off-black dark:fill-off-white" dot="fill-red dark:fill-green-light" %}
         </a>
@@ -35,16 +35,17 @@
       {{ content }}
     </main>
     <div>
-      <footer class="mx-auto max-w-screen-xl p-1 text-center text-sm leading-sm-tight">
-        <p>
-          Kodehalløj v/ Daniel Møller Kristensen
-          <br>
-          Messingvej 6
-          <br>
+      <footer class="mx-auto flex max-w-screen-lg justify-between p-1 text-sm leading-sm-tight">
+        <address>
+          Kodehalløj v/ Daniel Møller Kristensen<br>
+          Messingvej 6<br>
           8940 Randers SV
-          <br>
+        </address>
+        <address>
+          Mail:<br>
+          Phone:<br>
           CVR: 34151962
-        </p>
+        </address>
       </footer>
     </div>
   </body>
