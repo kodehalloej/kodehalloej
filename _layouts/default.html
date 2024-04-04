@@ -20,13 +20,16 @@
         </a>
         <nav>
           <ul class="flex gap-1 font-medium">
-            {% for i in (1..3) %}
-              <li>
-                <a href="/{{ i }}" class="text-off-black visited:text-off-black focus:text-white hover:text-white active:text-white dark:text-off-white dark:visited:text-off-white dark:focus:text-black dark:hover:text-black dark:active:text-black">
-                  Page {{ i }}
-                </a>
-              </li>
-            {% endfor %}
+            <li>
+              <a href="/about" class="text-off-black visited:text-off-black focus:text-white hover:text-white active:text-white dark:text-off-white dark:visited:text-off-white dark:focus:text-black dark:hover:text-black dark:active:text-black">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/blog" class="text-off-black visited:text-off-black focus:text-white hover:text-white active:text-white dark:text-off-white dark:visited:text-off-white dark:focus:text-black dark:hover:text-black dark:active:text-black">
+                About
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
