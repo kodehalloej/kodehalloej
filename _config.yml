@@ -3,9 +3,13 @@ title: "Kodehalløj"
 
 plugins:
   - jekyll-postcss
+  - jekyll-minifier
 
 postcss:
   cache: false
+
+jekyll-minifier:
+  compress_css: false
 
 exclude:
   - package-lock.json
