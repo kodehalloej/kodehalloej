@@ -4,12 +4,17 @@ title: "Kodehalløj"
 plugins:
   - jekyll-postcss
   - jekyll-minifier
+  - jekyll_picture_tag
 
 postcss:
   cache: false
 
 jekyll-minifier:
   compress_css: false
+
+picture:
+  source: "assets/img"
+  output: "assets/img/_generated"
 
 exclude:
   - assets/js/encode.js
