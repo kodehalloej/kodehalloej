@@ -5,7 +5,7 @@ layout: default
 <div class="flex flex-1 items-center">
   <article class="mx-auto max-w-screen-sm p-1 text-center">
     <div class="mb-0.5">
-      <img src="{{ '/assets/img/profile-picture-1000x1000.webp' | relative_url }}" alt="Daniel Møller Kristensen" class="mx-auto h-9 rounded-full dark:grayscale">
+      {% picture avatar profile-picture.jpeg --alt Daniel Møller Kristensen --img class="mx-auto h-9 rounded-full dark:grayscale" %}
     </div>
     <h1 class="mb-0.5 text-4xl font-medium tracking-tight text-red dark:text-green-light">Hi, I'm Daniel</h1>
     <p class="mb-0.75 text-lg">I'm a Backend Developer from Denmark. I specialize in Sitecore, Umbraco, C# and .NET.</p>
