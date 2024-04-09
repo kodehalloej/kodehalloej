@@ -12,6 +12,7 @@ jekyll-minifier:
   compress_css: false
 
 exclude:
+  - assets/js/encode.js
   - package-lock.json
   - package.json
   - postcss.config.js
