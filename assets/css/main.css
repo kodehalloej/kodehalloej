@@ -25,13 +25,13 @@
   }
 
   a {
-    @apply text-blue-light
-           visited:text-grey-light
-           focus:bg-blue-light focus:text-white
-           hover:bg-blue-light hover:text-white
-           active:bg-red-light active:text-white
+    @apply text-blue underline
+           visited:text-purple
+           focus:bg-blue focus:text-white
+           hover:bg-blue hover:text-white
+           active:bg-red active:text-white
            dark:text-cyan
-           dark:visited:text-grey
+           dark:visited:text-grey-light
            dark:focus:bg-cyan dark:focus:text-black
            dark:hover:bg-cyan dark:hover:text-black
            dark:active:bg-yellow dark:active:text-black;
