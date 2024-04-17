@@ -36,4 +36,8 @@
            dark:hover:bg-cyan dark:hover:text-black
            dark:active:bg-yellow dark:active:text-black;
   }
+
+  p {
+    @apply mb-1 last:mb-0;
+  }
 }
