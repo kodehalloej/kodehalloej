@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="flex flex-1 items-center">
-  <article class="mx-auto my-1 max-w-screen-sm px-1 text-center md:my-2 md:px-2">
+  <article class="mx-auto mb-2 mt-1 max-w-screen-sm px-1 text-center md:mb-2.5 md:mt-1.5 md:px-2">
     <div class="mb-0.5">
       {% picture avatar profile-picture.jpeg --alt Daniel Møller Kristensen --img class="mx-auto h-9 rounded-full" %}
     </div>
-    <h1 class="mb-0.5 text-4xl font-medium tracking-tight text-red dark:text-green-light">Hi, I'm Daniel</h1>
+    <h1 class="mt-0 text-4xl">Hi, I'm Daniel</h1>
     <p class="mb-0.75 text-lg">I'm a Backend Developer from Denmark. I specialize in Sitecore, Umbraco, C# and .NET.</p>
-    <ul class="mb-0.5 flex justify-center gap-0.75 text-3xl">
+    <ul class="flex justify-center gap-0.75 text-3xl">
       {% for social in site.data.socials %}
         <li>
           <a href="{{ social.url }}" class="focus:bg-transparent hover:bg-transparent active:bg-transparent" aria-label="{{ social.name }}">
