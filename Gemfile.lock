@@ -12,7 +12,17 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     execjs (2.9.1)
-    ffi (1.16.3)
+    ffi (1.17.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux-musl)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm-linux-musl)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86-linux-musl)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.0-x86_64-linux-musl)
     forwardable-extended (2.6.0)
     google-protobuf (4.27.0)
       bigdecimal
@@ -84,7 +94,7 @@ GEM
     mercenary (0.4.0)
     mime-types (3.5.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2024.0507)
+    mime-types-data (3.2024.0604)
     objective_elements (1.1.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -160,7 +170,9 @@ PLATFORMS
   aarch64-linux-musl
   aarch64-mingw-ucrt
   arm-linux-androideabi
+  arm-linux-gnu
   arm-linux-gnueabihf
+  arm-linux-musl
   arm-linux-musleabihf
   arm64-darwin
   riscv64-linux-android
