@@ -25,16 +25,21 @@
   }
 
   h1,
-  h2 {
-    @apply mb-0.5 mt-1.25 font-medium tracking-tight text-red first:mt-0 dark:text-green-light;
+  h2,
+  h3 {
+    @apply mb-0.5 mt-1.25 font-medium tracking-tight text-red dark:text-green-light;
   }
 
   h1 {
-    @apply text-2xl md:text-3xl;
+    @apply text-2xl first:mt-0 md:text-3xl;
   }
 
   h2 {
     @apply text-lg md:text-xl;
+  }
+
+  h3 {
+    @apply text-base md:text-lg;
   }
 
   a {
