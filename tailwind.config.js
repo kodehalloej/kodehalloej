@@ -61,7 +61,8 @@ module.exports = {
       9: "15.75rem"
     },
     fontFamily: {
-      sans: ["Rubik", ...defaultTheme.fontFamily.sans]
+      sans: ["Rubik", ...defaultTheme.fontFamily.sans],
+      mono: ["Reddit Mono", ...defaultTheme.fontFamily.mono]
     },
     fontSize: {
       xs: ["0.8125rem", "1.375rem"],
