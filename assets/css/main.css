@@ -3,6 +3,16 @@
 
 @tailwind base;
 @tailwind components;
+
+.highlight pre {
+  @apply whitespace-pre-wrap rounded-md border
+         border-grey-light bg-white
+         px-0.75 py-0.5 text-sm leading-sm-tight
+         text-black
+         dark:border-grey dark:bg-black
+         dark:text-white;
+}
+
 @tailwind utilities;
 
 @layer base {
@@ -74,7 +84,7 @@
            dark:active:bg-yellow dark:active:text-black;
   }
 
-  p {
+  figure, p {
     @apply mb-1;
   }
 }
