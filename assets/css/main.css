@@ -5,7 +5,7 @@
 @tailwind components;
 
 .highlight pre {
-  @apply whitespace-pre-wrap rounded-md border
+  @apply max-w-[calc(100vw-theme(spacing.1)*2)] overflow-auto rounded-md border
          border-grey-light bg-white
          px-0.75 py-0.5 text-sm leading-sm-tight
          text-black
