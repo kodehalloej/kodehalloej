@@ -26,7 +26,7 @@ module.exports = {
       purple: colors.fuchsia[700],
       green: {
         light: colors.lime[300],
-        DEFAULT: colors.lime[600]
+        DEFAULT: colors.lime[700]
       },
       blue: {
         light: colors.indigo[400],
