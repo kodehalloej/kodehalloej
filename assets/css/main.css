@@ -13,6 +13,27 @@
          dark:text-white;
 }
 
+.highlight .cm {
+  @apply italic text-green dark:text-grey-light;
+}
+
+.highlight .k,
+.highlight .kt {
+  @apply text-purple dark:text-red-light;
+}
+
+.highlight .m {
+  @apply text-red dark:text-yellow;
+}
+
+.highlight .nf {
+  @apply text-blue dark:text-cyan;
+}
+
+.highlight .s {
+  @apply text-brown dark:text-green-light;
+}
+
 @tailwind utilities;
 
 @layer base {
