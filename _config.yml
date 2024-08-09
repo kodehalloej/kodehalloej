@@ -14,9 +14,10 @@ jekyll-minifier:
 
 picture:
   source: "assets/images"
-  output: "assets/images/responsive"
+  output: "assets/images"
 
 exclude:
+  - assets/images
   - assets/javascripts/encode.js
   - package-lock.json
   - package.json
