@@ -14,7 +14,7 @@ jekyll-minifier:
 
 picture:
   source: "assets/images"
-  output: "assets/images/_generated"
+  output: "assets/images/responsive"
 
 exclude:
   - assets/javascripts/encode.js
