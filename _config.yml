@@ -13,11 +13,11 @@ jekyll-minifier:
   compress_css: false
 
 picture:
-  source: "assets/img"
-  output: "assets/img/_generated"
+  source: "assets/images"
+  output: "assets/images/_generated"
 
 exclude:
-  - assets/js/encode.js
+  - assets/javascripts/encode.js
   - package-lock.json
   - package.json
   - postcss.config.js
