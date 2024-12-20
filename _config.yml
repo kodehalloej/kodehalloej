@@ -11,6 +11,8 @@ postcss:
 
 jekyll-minifier:
   compress_css: false
+  uglifier_args:
+    harmony: true
 
 picture:
   source: "assets/images"
