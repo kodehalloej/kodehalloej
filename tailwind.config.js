@@ -1,5 +1,5 @@
-const colors = require('tailwindcss/colors');
-const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
@@ -8,7 +8,7 @@ module.exports = {
     "./_layouts/**/*.html",
     "./_posts/*.md",
     "./*.md",
-    "./*.html"
+    "./*.html",
   ],
   theme: {
     colors: {
@@ -20,17 +20,17 @@ module.exports = {
       white: colors.white,
       red: {
         light: colors.red[400],
-        DEFAULT: colors.red[800]
+        DEFAULT: colors.red[800],
       },
       cyan: colors.teal[300],
       purple: colors.fuchsia[700],
       green: {
         light: colors.lime[300],
-        DEFAULT: colors.lime[700]
+        DEFAULT: colors.lime[700],
       },
       blue: {
         light: colors.indigo[400],
-        DEFAULT: colors.indigo[800]
+        DEFAULT: colors.indigo[800],
       },
       yellow: colors.yellow[200],
       orange: colors.amber[600],
@@ -38,8 +38,8 @@ module.exports = {
       grey: {
         light: colors.neutral[400],
         DEFAULT: colors.neutral[500],
-        dark: colors.neutral[700]
-      }
+        dark: colors.neutral[700],
+      },
     },
     spacing: {
       0: "0",
@@ -58,11 +58,11 @@ module.exports = {
       6: "10.5rem",
       7: "12.25rem",
       8: "14rem",
-      9: "15.75rem"
+      9: "15.75rem",
     },
     fontFamily: {
       sans: ["Rubik", ...defaultTheme.fontFamily.sans],
-      mono: ["Reddit Mono", ...defaultTheme.fontFamily.mono]
+      mono: ["Reddit Mono", ...defaultTheme.fontFamily.mono],
     },
     fontSize: {
       xs: ["0.8125rem", "1.375rem"],
@@ -73,13 +73,13 @@ module.exports = {
       "2xl": ["1.9375rem", "2.375rem"],
       "3xl": ["2.3125rem", "2.75rem"],
       "4xl": ["2.8125rem", "3.125rem"],
-      "5xl": ["3.375rem", "3.75rem"]
+      "5xl": ["3.375rem", "3.75rem"],
     },
     lineHeight: {
       "sm-tight": "1.375rem",
       "sm-normal": "1.5rem",
-      "sm-loose": "1.75rem"
-    }
+      "sm-loose": "1.75rem",
+    },
   },
-  plugins: []
+  plugins: [],
 };
