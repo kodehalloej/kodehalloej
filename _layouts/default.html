@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- prettier-ignore -->
     <title>
       {% if page.title %}
         {{ page.title }} - {{ site.title }}
@@ -10,18 +11,33 @@
         {{ site.title }}
       {% endif %}
     </title>
-    <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | relative_url }}">
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/stylesheets/main.css' | relative_url }}"
+    />
   </head>
-  <body class="flex min-h-screen flex-col bg-off-white text-base text-off-black dark:bg-off-black dark:text-off-white">
+  <body
+    class="flex min-h-screen flex-col bg-off-white text-base text-off-black dark:bg-off-black dark:text-off-white"
+  >
     <div>
-      <header class="mx-auto flex max-w-screen-lg items-center justify-between p-1">
-        <a href="{% link index.html %}" class="focus:bg-transparent hover:bg-transparent active:bg-transparent" aria-label="Home">
+      <header
+        class="mx-auto flex max-w-screen-lg items-center justify-between p-1"
+      >
+        <!-- prettier-ignore -->
+        <a
+          href="{% link index.html %}"
+          class="hover:bg-transparent focus:bg-transparent active:bg-transparent"
+          aria-label="Home"
+        >
           {% include kodehalloej.svg path="h-1.25 fill-off-black sm:h-1.5 dark:fill-off-white" dot="fill-red dark:fill-green-light" %}
         </a>
         <nav>
           <ul class="flex gap-1 font-medium">
             <li>
-              <a href="/blog" class="text-off-black no-underline visited:text-off-black focus:text-white hover:text-white active:text-white dark:text-off-white dark:visited:text-off-white dark:focus:text-black dark:hover:text-black dark:active:text-black">
+              <a
+                href="/blog"
+                class="text-off-black no-underline visited:text-off-black hover:text-white focus:text-white active:text-white dark:text-off-white dark:visited:text-off-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+              >
                 Blog
               </a>
             </li>
@@ -29,19 +45,28 @@
         </nav>
       </header>
     </div>
+    <!-- prettier-ignore -->
     <main class="flex flex-1 flex-col">
       {{ content }}
     </main>
     <div>
-      <footer class="mx-auto max-w-screen-lg justify-between p-1 text-center text-sm leading-sm-tight sm:flex sm:text-start">
+      <footer
+        class="mx-auto max-w-screen-lg justify-between p-1 text-center text-sm leading-sm-tight sm:flex sm:text-start"
+      >
         <address class="not-italic">
-          Kodehalløj v/ Daniel Møller Kristensen<br>
-          Messingvej 6<br>
+          Kodehalløj v/ Daniel Møller Kristensen<br />
+          Messingvej 6<br />
           8940 Randers SV
         </address>
         <address class="not-italic">
-          Mail: <a href="#" data-encoded="mailto:e98d8482a982868d8c81888585868c83c78d82">#</a><br>
-          Phone: <a href="#" data-encoded="tel:e9c2dddcd1d8dfdcdcd8dfd9">#</a><br>
+          Mail:
+          <a
+            href="#"
+            data-encoded="mailto:e98d8482a982868d8c81888585868c83c78d82"
+            >#</a
+          ><br />
+          Phone: <a href="#" data-encoded="tel:e9c2dddcd1d8dfdcdcd8dfd9">#</a
+          ><br />
           CVR: 34151962
         </address>
       </footer>

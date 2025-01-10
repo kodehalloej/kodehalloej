@@ -3,13 +3,18 @@ layout: default
 title: Blog
 ---
 
-<nav class="mx-auto mb-2 mt-1 max-w-screen-md px-1 text-center md:mb-2.5 md:mt-1.5 md:px-2">
+<nav
+  class="mx-auto mb-2 mt-1 max-w-screen-md px-1 text-center md:mb-2.5 md:mt-1.5 md:px-2"
+>
   <h1 class="mb-0.75">Posts</h1>
+  <!-- prettier-ignore -->
   <ul>
     {% for post in site.posts %}
       <li class="mb-0.5 last:mb-0">
         <article>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+          <time datetime="{{ post.date | date_to_xmlschema }}"
+            >{{ post.date | date_to_string }}</time
+          >
           <h2 class="mt-0 text-lg">
             <a href="{{ post.url }}">{{ post.title }}</a>
           </h2>
