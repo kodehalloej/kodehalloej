@@ -111,3 +111,13 @@
   --leading-sm-normal: 1.5rem;
   --leading-sm-loose: 1.75rem;
 }
+
+@layer base {
+  h1 {
+    @apply text-red dark:text-green-light mt-1.25 mb-0.5 font-medium tracking-tight;
+  }
+
+  a {
+    @apply text-blue visited:text-purple hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:visited:text-grey-light dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black;
+  }
+}
