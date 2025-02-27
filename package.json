@@ -1,4 +1,5 @@
 {
+  "name": "kodehalloej",
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "cssnano": "^7.0.1",
