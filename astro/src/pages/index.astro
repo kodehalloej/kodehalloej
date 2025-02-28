@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import logo from "../images/kodehalloej.svg?raw";
+import Logo from "../components/Logo.astro";
 import { Picture } from "astro:assets";
 import profilePicture from "../images/profile-picture.jpg";
 ---
@@ -24,7 +24,7 @@ import profilePicture from "../images/profile-picture.jpg";
           class="hover:bg-transparent focus:bg-transparent active:bg-transparent"
           aria-label="Home"
         >
-          <Fragment set:html={logo} />
+          <Logo />
         </a>
         <nav></nav>
       </header>
