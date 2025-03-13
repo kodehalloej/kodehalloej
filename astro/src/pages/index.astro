@@ -1,8 +1,8 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import { Picture } from "astro:assets";
-import profilePicture from "../images/profile-picture.jpg";
 import Social from "../components/Social.astro";
+import { Picture } from "astro:assets";
+import avatar from "../images/avatar.jpg";
 ---
 
 <MainLayout>
@@ -12,7 +12,7 @@ import Social from "../components/Social.astro";
     >
       <div class="mb-0.5">
         <Picture
-          src={profilePicture}
+          src={avatar}
           formats={["avif", "webp", "jpg"]}
           alt="Daniel Møller Kristensen"
           width="900"
