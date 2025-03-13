@@ -1,86 +1,40 @@
 ---
-import "../styles/global.css";
-import Logo from "../components/Logo.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 import { Picture } from "astro:assets";
 import profilePicture from "../images/profile-picture.jpg";
 import Social from "../components/Social.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kodehalløj</title>
-  </head>
-  <body
-    class="bg-off-white text-off-black dark:bg-off-black dark:text-off-white flex min-h-screen flex-col text-base"
-  >
-    <div>
-      <header
-        class="mx-auto flex max-w-(--breakpoint-lg) items-center justify-between p-1"
-      >
-        <a
-          href="/"
-          class="hover:bg-transparent focus:bg-transparent active:bg-transparent"
-          aria-label="Home"
-        >
-          <Logo />
-        </a>
-        <nav></nav>
-      </header>
-    </div>
-    <main class="flex flex-1 flex-col">
-      <div class="flex flex-1 items-center">
-        <article
-          class="mx-auto mt-1 mb-2 max-w-(--breakpoint-sm) px-1 text-center md:mt-1.5 md:mb-2.5 md:px-2"
-        >
-          <div class="mb-0.5">
-            <Picture
-              src={profilePicture}
-              formats={["avif", "webp", "jpg"]}
-              alt="Daniel Møller Kristensen"
-              width="900"
-              class="mx-auto w-9 rounded-full"
-            />
-          </div>
-          <h1 class="mt-0 text-4xl">Hi, I'm Daniel</h1>
-          <p class="mb-0.75 text-lg">
-            I'm a Backend Developer from Denmark. I specialize in Sitecore,
-            Umbraco, C# and .NET.
-          </p>
-          <ul class="flex justify-center gap-0.75 text-3xl">
-            <li>
-              <Social name="GitHub" url="https://github.com/kodehalloej" />
-            </li>
-            <li>
-              <Social name="LinkedIn" url="https://www.linkedin.com/in/kodehalloej" />
-            </li>
-          </ul>
-        </article>
+<MainLayout>
+  <div class="flex flex-1 items-center">
+    <article
+      class="mx-auto mt-1 mb-2 max-w-(--breakpoint-sm) px-1 text-center md:mt-1.5 md:mb-2.5 md:px-2"
+    >
+      <div class="mb-0.5">
+        <Picture
+          src={profilePicture}
+          formats={["avif", "webp", "jpg"]}
+          alt="Daniel Møller Kristensen"
+          width="900"
+          class="mx-auto w-9 rounded-full"
+        />
       </div>
-    </main>
-    <div>
-      <footer
-        class="leading-sm-tight mx-auto max-w-(--breakpoint-lg) justify-between p-1 text-center text-sm sm:flex sm:text-start"
-      >
-        <address class="not-italic">
-          Kodehalløj v/ Daniel Møller Kristensen<br />
-          Messingvej 6<br />
-          8940 Randers SV
-        </address>
-        <address class="not-italic">
-          Mail:
-          <a
-            href="#"
-            data-encoded="mailto:e98d8482a982868d8c81888585868c83c78d82">#</a
-          ><br />
-          Phone: <a href="#" data-encoded="tel:e9c2dddcd1d8dfdcdcd8dfd9">#</a
-          ><br />
-          CVR: 34151962
-        </address>
-      </footer>
-    </div>
-    <script src="../scripts/decode.js"></script>
-  </body>
-</html>
+      <h1 class="mt-0 text-4xl">Hi, I'm Daniel</h1>
+      <p class="mb-0.75 text-lg">
+        I'm a Backend Developer from Denmark. I specialize in Sitecore, Umbraco,
+        C# and .NET.
+      </p>
+      <ul class="flex justify-center gap-0.75 text-3xl">
+        <li>
+          <Social name="GitHub" url="https://github.com/kodehalloej" />
+        </li>
+        <li>
+          <Social
+            name="LinkedIn"
+            url="https://www.linkedin.com/in/kodehalloej"
+          />
+        </li>
+      </ul>
+    </article>
+  </div>
+</MainLayout>

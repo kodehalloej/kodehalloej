@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+import Logo from "../components/Logo.astro";
+
+const title =
+  "Kodehalløj" + (Astro.props.title ? " | " + Astro.props.title : "");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body
+    class="bg-off-white text-off-black dark:bg-off-black dark:text-off-white flex min-h-screen flex-col text-base"
+  >
+    <div>
+      <header
+        class="mx-auto flex max-w-(--breakpoint-lg) items-center justify-between p-1"
+      >
+        <a
+          href="/"
+          class="hover:bg-transparent focus:bg-transparent active:bg-transparent"
+          aria-label="Home"
+        >
+          <Logo />
+        </a>
+        <nav></nav>
+      </header>
+    </div>
+    <main class="flex flex-1 flex-col">
+      <slot />
+    </main>
+    <div>
+      <footer
+        class="leading-sm-tight mx-auto max-w-(--breakpoint-lg) justify-between p-1 text-center text-sm sm:flex sm:text-start"
+      >
+        <address class="not-italic">
+          Kodehalløj v/ Daniel Møller Kristensen<br />
+          Messingvej 6<br />
+          8940 Randers SV
+        </address>
+        <address class="not-italic">
+          Mail:
+          <a
+            href="#"
+            data-encoded="mailto:e98d8482a982868d8c81888585868c83c78d82">#</a
+          ><br />
+          Phone: <a href="#" data-encoded="tel:e9c2dddcd1d8dfdcdcd8dfd9">#</a
+          ><br />
+          CVR: 34151962
+        </address>
+      </footer>
+    </div>
+    <script src="../scripts/decode.js"></script>
+  </body>
+</html>
