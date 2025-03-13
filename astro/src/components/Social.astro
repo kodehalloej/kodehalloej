@@ -1,0 +1,13 @@
+---
+import Icon from "./Icon.astro";
+
+const { name, url } = Astro.props;
+---
+
+<a
+  href={url}
+  class="hover:bg-transparent focus:bg-transparent active:bg-transparent"
+  aria-label={name}
+>
+  <Icon icon={name.toLowerCase()} />
+</a>
