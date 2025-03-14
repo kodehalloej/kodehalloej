@@ -153,3 +153,7 @@
     @apply mb-1;
   }
 }
+
+pre[class*="language-"] {
+  @apply border-grey-light leading-sm-tight dark:border-grey max-w-[calc(100vw-(var(--spacing-1))*2)] overflow-auto rounded-md border bg-white px-0.75 py-0.5 text-sm text-black dark:bg-black dark:text-white;
+}
