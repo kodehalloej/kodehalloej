@@ -3,7 +3,7 @@ import "../styles/global.css";
 import Logo from "../components/Logo.astro";
 
 const title =
-  "Kodehalløj" + (Astro.props.title ? " | " + Astro.props.title : "");
+   (Astro.props.title ? Astro.props.title + " - " : "") + "Kodehalløj";
 ---
 
 <!doctype html>
