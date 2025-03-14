@@ -113,6 +113,19 @@
 }
 
 @layer base {
+  main {
+    & > article,
+    & > nav {
+      & > :first-child {
+        @apply mt-0;
+      }
+
+      & > :last-child {
+        @apply mb-0;
+      }
+    }
+  }
+
   h1,
   h2,
   h3 {
