@@ -1,8 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Social from "../components/Social.astro";
 import { Picture } from "astro:assets";
 import avatar from "../images/avatar.jpg";
+import Social from "../components/Social.astro";
+import socials from "../data/socials.json";
 ---
 
 <MainLayout>
@@ -17,6 +18,7 @@ import avatar from "../images/avatar.jpg";
           alt="Daniel Møller Kristensen"
           width="900"
           class="mx-auto w-9 rounded-full"
+          loading="eager"
         />
       </div>
       <h1 class="mt-0 text-4xl">Hi, I'm Daniel</h1>
@@ -25,15 +27,15 @@ import avatar from "../images/avatar.jpg";
         C# and .NET.
       </p>
       <ul class="flex justify-center gap-0.75 text-3xl">
-        <li>
-          <Social name="GitHub" url="https://github.com/kodehalloej" />
-        </li>
-        <li>
-          <Social
-            name="LinkedIn"
-            url="https://www.linkedin.com/in/kodehalloej"
-          />
-        </li>
+        {
+          socials.map((social) => {
+            return (
+              <li>
+                <Social name={social.name} url={social.url} />
+              </li>
+            );
+          })
+        }
       </ul>
     </article>
   </div>
