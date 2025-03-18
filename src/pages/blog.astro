@@ -1,7 +1,12 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-const title = "Blog"
-const posts = Object.values(import.meta.glob("./posts/*.mdx", { eager: true }));
+const title = "Blog";
+const posts = Object.values(
+  import.meta.glob("./posts/*.mdx", { eager: true }),
+).sort(
+  (x: any, y: any) =>
+    Date.parse(y.frontmatter.date) - Date.parse(x.frontmatter.date),
+);
 ---
 
 <MainLayout title={title}>
