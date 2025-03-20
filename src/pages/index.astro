@@ -1,9 +1,11 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
 import { Picture } from "astro:assets";
 import avatar from "../images/avatar.jpg";
 import Social from "../components/Social.astro";
-import socials from "../data/socials.json";
+
+const socials = await getCollection("socials");
 ---
 
 <MainLayout>
@@ -31,7 +33,7 @@ import socials from "../data/socials.json";
           socials.map((social) => {
             return (
               <li>
-                <Social name={social.name} url={social.url} />
+                <Social name={social.data.name} url={social.data.url} />
               </li>
             );
           })
