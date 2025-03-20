@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Logo from "../components/Logo.astro";
+
 const title =
   (Astro.props.title ? Astro.props.title + " | " : "") + "Kodehalløj";
 ---
@@ -30,10 +31,10 @@ const title =
           <ul class="flex gap-1 font-medium">
             <li>
               <a
-                href="/blog"
+                href="/posts"
                 class="text-off-black visited:text-off-black dark:text-off-white dark:visited:text-off-white no-underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
               >
-                Blog
+                Posts
               </a>
             </li>
           </ul>

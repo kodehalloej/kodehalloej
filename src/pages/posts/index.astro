@@ -1,0 +1,37 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+
+const title = "Posts";
+const posts = (await getCollection("posts")).sort(
+  (x, y) => y.data.date.valueOf() - x.data.date.valueOf(),
+);
+---
+
+<MainLayout title={title}>
+  <nav
+    class="mx-auto mt-1 mb-2 max-w-(--breakpoint-md) px-1 text-center md:mt-1.5 md:mb-2.5 md:px-2"
+  >
+    <h1 class="mb-0.75">{title}</h1>
+    <ul>
+      {
+        posts.map(post => (
+          <li class="mb-0.5 last:mb-0">
+            <article>
+              <time datetime={post.data.date.toISOString()}>
+                {post.data.date.toLocaleDateString("en-US", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
+              <h2 class="mt-0 text-lg">
+                <a href={`/posts/${post.id}`}>{post.data.title}</a>
+              </h2>
+            </article>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</MainLayout>
