@@ -88,7 +88,7 @@
 
   --text-*: initial;
   --text-sm: 0.9375rem;
-  --text-sm--line-height: 1.6;
+  --text-sm--line-height: 1.46666667;
   --text-base: 1.125rem;
   --text-base--line-height: 1.55555556;
   --text-lg: 1.375rem;
@@ -101,11 +101,6 @@
   --text-3xl--line-height: 1.18918919;
   --text-4xl: 2.8125rem;
   --text-4xl--line-height: 1.11111111;
-
-  --leading-*: initial;
-  --leading-sm-tight: 1.375rem;
-  --leading-sm-normal: 1.5rem;
-  --leading-sm-loose: 1.75rem;
 }
 
 @layer base {
@@ -151,5 +146,5 @@
 }
 
 pre[class*="language-"] {
-  @apply border-grey-light leading-sm-tight dark:border-grey max-w-[calc(100vw-(var(--spacing))*2)] overflow-auto rounded-md border bg-white px-0.75 py-0.5 text-sm text-black dark:bg-black dark:text-white;
+  @apply border-grey-light dark:border-grey max-w-[calc(100vw-(var(--spacing))*2)] overflow-auto rounded-md border bg-white px-0.75 py-0.5 text-sm text-black dark:bg-black dark:text-white;
 }
