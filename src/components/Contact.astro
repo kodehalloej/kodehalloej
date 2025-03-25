@@ -1,0 +1,12 @@
+---
+const { type, value } = Astro.props;
+---
+
+{type}:
+<a
+  href="#"
+  data-encoded={value}
+  class="text-blue hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+  >#</a
+>
+<script src="../scripts/decode.js"></script>

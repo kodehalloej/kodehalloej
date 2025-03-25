@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Logo from "../components/Logo.astro";
+import Contact from "../components/Contact.astro";
 
 const title =
   (Astro.props.title ? Astro.props.title + " | " : "") + "Kodehalløj";
@@ -50,23 +51,16 @@ const title =
           8940 Randers SV
         </address>
         <address class="not-italic">
-          Mail:
-          <a
-            href="#"
-            data-encoded="mailto:e98d8482a982868d8c81888585868c83c78d82"
-            class="text-blue hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
-            >#</a
-          ><br />
-          Phone: <a
-            href="#"
-            data-encoded="tel:e9c2dddcd1d8dfdcdcd8dfd9"
-            class="text-blue hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
-            >#</a
-          ><br />
+          <Contact
+            type="Mail"
+            value="mailto:e98d8482a982868d8c81888585868c83c78d82"
+          />
+          <br />
+          <Contact type="Phone" value="tel:e9c2dddcd1d8dfdcdcd8dfd9" />
+          <br />
           CVR: 34151962
         </address>
       </footer>
     </div>
-    <script src="../scripts/decode.js"></script>
   </body>
 </html>
