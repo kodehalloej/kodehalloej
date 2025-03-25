@@ -12,10 +12,14 @@ const posts = (await getCollection("posts")).sort(
   <nav
     class="mx-auto mt-1 mb-2 max-w-(--breakpoint-md) px-1 text-center md:mt-1.5 md:mb-2.5 md:px-2"
   >
-    <h1 class="mb-0.75">{title}</h1>
+    <h1
+      class="text-red dark:text-green-light mt-0 mb-0.75 text-2xl font-medium tracking-tight md:text-3xl"
+    >
+      {title}
+    </h1>
     <ul>
       {
-        posts.map(post => (
+        posts.map((post) => (
           <li class="mb-0.5 last:mb-0">
             <article>
               <time datetime={post.data.date.toISOString()}>
@@ -25,8 +29,13 @@ const posts = (await getCollection("posts")).sort(
                   year: "numeric",
                 })}
               </time>
-              <h2 class="mt-0 text-lg">
-                <a href={`/blog/${post.id}`}>{post.data.title}</a>
+              <h2 class="text-red dark:text-green-light mt-0 mb-0.5 text-lg font-medium tracking-tight">
+                <a
+                  href={`/blog/${post.id}`}
+                  class="text-blue visited:text-purple hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:visited:text-grey-light dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+                >
+                  {post.data.title}
+                </a>
               </h2>
             </article>
           </li>
