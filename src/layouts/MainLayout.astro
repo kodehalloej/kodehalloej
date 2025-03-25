@@ -20,11 +20,7 @@ const title =
       <header
         class="mx-auto flex max-w-(--breakpoint-lg) items-center justify-between p-1"
       >
-        <a
-          href="/"
-          class="hover:bg-transparent focus:bg-transparent active:bg-transparent"
-          aria-label="Home"
-        >
+        <a href="/" aria-label="Home">
           <Logo />
         </a>
         <nav>
@@ -32,7 +28,7 @@ const title =
             <li>
               <a
                 href="/blog"
-                class="text-off-black visited:text-off-black dark:text-off-white dark:visited:text-off-white no-underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+                class="text-off-black hover:bg-blue focus:bg-blue active:bg-red dark:text-off-white dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow no-underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
               >
                 Blog
               </a>
@@ -57,9 +53,15 @@ const title =
           Mail:
           <a
             href="#"
-            data-encoded="mailto:e98d8482a982868d8c81888585868c83c78d82">#</a
+            data-encoded="mailto:e98d8482a982868d8c81888585868c83c78d82"
+            class="text-blue hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+            >#</a
           ><br />
-          Phone: <a href="#" data-encoded="tel:e9c2dddcd1d8dfdcdcd8dfd9">#</a
+          Phone: <a
+            href="#"
+            data-encoded="tel:e9c2dddcd1d8dfdcdcd8dfd9"
+            class="text-blue hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+            >#</a
           ><br />
           CVR: 34151962
         </address>
