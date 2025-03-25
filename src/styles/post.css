@@ -1,0 +1,42 @@
+@reference "./global.css";
+
+article {
+  & > :first-child {
+    @apply mt-0;
+  }
+
+  & > :last-child {
+    @apply mb-0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-red dark:text-green-light mt-1.25 mb-0.5 font-medium tracking-tight;
+  }
+
+  h1 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h2 {
+    @apply text-lg md:text-xl;
+  }
+
+  h3 {
+    @apply text-base md:text-lg;
+  }
+
+  a {
+    @apply text-blue visited:text-purple hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:visited:text-grey-light dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black;
+  }
+
+  figure,
+  p {
+    @apply mb-1;
+  }
+
+  pre {
+    @apply border-grey-light dark:border-grey max-w-[calc(100vw-(var(--spacing))*2)] overflow-auto rounded-md border bg-white px-0.75 py-0.5 text-sm text-black dark:bg-black dark:text-white;
+  }
+}
