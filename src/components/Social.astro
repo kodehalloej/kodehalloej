@@ -5,10 +5,6 @@ const { default: icon } = await import(
 );
 ---
 
-<a
-  href={url}
-  class="hover:bg-transparent focus:bg-transparent active:bg-transparent"
-  aria-label={name}
->
+<a href={url} aria-label={name}>
   <Fragment set:html={icon} />
 </a>
