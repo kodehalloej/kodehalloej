@@ -3,8 +3,10 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import { getCollection } from "astro:content";
 
 const title = "Posts";
+const getPubDate = (postPubDate?: Date) => postPubDate ?? new Date(0);
 const posts = (await getCollection("posts")).sort(
-  (x, y) => y.data.date.valueOf() - x.data.date.valueOf(),
+  (x, y) =>
+    getPubDate(y.data.pubDate).getTime() - getPubDate(x.data.pubDate).getTime(),
 );
 ---
 
@@ -22,8 +24,8 @@ const posts = (await getCollection("posts")).sort(
         posts.map((post) => (
           <li class="mb-0.5 last:mb-0">
             <article>
-              <time datetime={post.data.date.toISOString()}>
-                {post.data.date.toLocaleDateString("en-US", {
+              <time datetime={getPubDate(post.data.pubDate).toISOString()}>
+                {getPubDate(post.data.pubDate).toLocaleDateString("en-US", {
                   day: "numeric",
                   month: "long",
                   year: "numeric",
