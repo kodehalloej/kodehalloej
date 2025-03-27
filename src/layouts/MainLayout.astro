@@ -13,7 +13,21 @@ const title =
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    {import.meta.env.MODE === "production" && <link rel="sitemap" href="/sitemap-index.xml" />}
+    {
+      import.meta.env.MODE === "production" && (
+        <link rel="sitemap" href="/sitemap-index.xml" />
+      )
+    }
+    {
+      import.meta.env.MODE === "production" && (
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={title}
+          href={new URL("feed.xml", Astro.site)}
+        />
+      )
+    }
   </head>
   <body
     class="bg-off-white text-off-black dark:bg-off-black dark:text-off-white flex min-h-screen flex-col text-base"
