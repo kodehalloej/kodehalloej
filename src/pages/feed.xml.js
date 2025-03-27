@@ -2,14 +2,18 @@ import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 
 const getHandler = async function GET(context) {
-  const posts = await getCollection("posts");
+  const getPubDate = (postPubDate) => postPubDate ?? new Date(0);
+  const posts = (await getCollection("posts")).sort(
+    (x, y) =>
+      getPubDate(x.data.pubDate).getTime() - getPubDate(y.data.pubDate).getTime(),
+  );
   return rss({
     title: "Kodehalløj",
     description: "Kodehalløj Blog",
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,
-      pubDate: post.data.pubDate ?? new Date(0),
+      pubDate: getPubDate(post.data.pubDate),
       link: `/blog/${post.id}/`,
     })),
   });
