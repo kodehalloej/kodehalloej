@@ -37,6 +37,36 @@ article {
   }
 
   pre {
-    @apply border-grey-light dark:border-grey max-w-[calc(100vw-(var(--spacing))*2)] overflow-auto rounded-md border bg-white px-0.75 py-0.5 text-sm text-black dark:bg-black dark:text-white;
+    @apply border-grey-light dark:border-grey-dark max-w-[calc(100vw-(var(--spacing))*2)] overflow-auto rounded-md border bg-white px-0.75 py-0.5 text-sm text-black dark:bg-black dark:text-white;
+  }
+
+  code[class*="language-"] .token {
+    &.class-name {
+      @apply text-purple dark:text-cyan;
+
+      & .keyword {
+        @apply text-purple dark:text-cyan;
+      }
+    }
+
+    &.comment {
+      @apply text-grey dark:text-grey-light;
+    }
+
+    &.function {
+      @apply text-blue dark:text-blue-light;
+    }
+
+    &.keyword {
+      @apply text-red dark:text-red-light;
+    }
+
+    &.number {
+      @apply text-brown dark:text-yellow;
+    }
+
+    &.string {
+      @apply text-green dark:text-orange;
+    }
   }
 }
