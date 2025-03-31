@@ -5,7 +5,8 @@ const getHandler = async function GET(context) {
   const getPubDate = (postPubDate) => postPubDate ?? new Date(0);
   const posts = (await getCollection("posts")).sort(
     (x, y) =>
-      getPubDate(x.data.pubDate).getTime() - getPubDate(y.data.pubDate).getTime(),
+      getPubDate(x.data.pubDate).getTime() -
+      getPubDate(y.data.pubDate).getTime(),
   );
   return rss({
     title: "Kodehalløj",
