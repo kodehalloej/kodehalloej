@@ -31,8 +31,8 @@ article {
     @apply text-blue visited:text-purple hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:visited:text-grey-light dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black;
   }
 
-  figure,
-  p {
+  p,
+  pre {
     @apply mb-1;
   }
 
@@ -41,6 +41,11 @@ article {
   }
 
   code[class*="language-"] .token {
+    &.boolean,
+    &.number {
+      @apply text-brown dark:text-yellow;
+    }
+
     &.class-name {
       @apply text-purple dark:text-cyan;
 
@@ -49,7 +54,8 @@ article {
       }
     }
 
-    &.comment {
+    &.comment,
+    &.punctuation {
       @apply text-grey dark:text-grey-light;
     }
 
@@ -61,12 +67,60 @@ article {
       @apply text-red dark:text-red-light;
     }
 
-    &.number {
+    &.string {
+      @apply text-green dark:text-orange;
+    }
+  }
+
+  code[class="language-html"] .token {
+    &.doctype,
+    &.tag {
+      @apply text-purple dark:text-cyan;
+
+      .attr-name,
+      .name {
+        @apply text-blue dark:text-blue-light;
+      }
+
+      .attr-value {
+        @apply text-green dark:text-orange;
+      }
+    }
+  }
+
+  code[class="language-css"] .token {
+    &.atrule .property {
+      @apply text-black dark:text-white;
+    }
+
+    &.attr-name,
+    &.pseudo-class {
+      @apply text-purple dark:text-cyan;
+    }
+
+    &.attr-value {
+      @apply text-green dark:text-orange;
+    }
+
+    &.color {
       @apply text-brown dark:text-yellow;
     }
 
-    &.string {
-      @apply text-green dark:text-orange;
+    &.combinator {
+      @apply text-grey dark:text-grey-light;
+    }
+
+    &.property,
+    &.variable {
+      @apply text-purple dark:text-cyan;
+    }
+
+    &.rule {
+      @apply text-red dark:text-red-light;
+    }
+
+    &.selector {
+      @apply text-blue dark:text-blue-light;
     }
   }
 }
