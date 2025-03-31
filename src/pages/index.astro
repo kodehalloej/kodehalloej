@@ -16,9 +16,11 @@ const socials = await getCollection("socials");
       <div class="mb-0.5">
         <Picture
           src={avatar}
-          formats={["avif", "webp"]}
           alt="Daniel Møller Kristensen"
-          width="900"
+          width="300"
+          densities={[1, 2, 3]}
+          formats={["avif", "webp"]}
+          fallbackFormat="jpg"
           class="mx-auto w-9 rounded-full"
           loading="eager"
         />
