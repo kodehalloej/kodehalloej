@@ -1,0 +1,17 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+const title = "About";
+---
+
+<MainLayout title={title}>
+  <article
+    class="mx-auto mt-1 mb-2 max-w-(--breakpoint-md) px-1 md:mt-1.5 md:mb-2.5 md:px-2"
+  >
+    <h1
+      class="text-red dark:text-green-light mt-0 mb-0.75 text-center text-2xl font-medium tracking-tight md:text-3xl"
+    >
+      {title}
+    </h1>
+  </article>
+</MainLayout>
