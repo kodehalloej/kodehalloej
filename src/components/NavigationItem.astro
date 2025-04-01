@@ -1,0 +1,10 @@
+---
+const { name, url } = Astro.props;
+---
+
+<a
+  href={url}
+  class="text-off-black hover:bg-blue focus:bg-blue active:bg-red dark:text-off-white dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow no-underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+>
+  {name}
+</a>

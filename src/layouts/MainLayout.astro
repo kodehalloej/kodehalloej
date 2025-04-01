@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Logo from "../components/Logo.astro";
+import NavigationItem from "../components/NavigationItem.astro";
 import Contact from "../components/Contact.astro";
 
 const title =
@@ -42,12 +43,7 @@ const title =
         <nav>
           <ul class="flex gap-1 font-medium">
             <li>
-              <a
-                href="/blog"
-                class="text-off-black hover:bg-blue focus:bg-blue active:bg-red dark:text-off-white dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow no-underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
-              >
-                Blog
-              </a>
+              <NavigationItem name="Blog" url="/blog" />
             </li>
           </ul>
         </nav>
