@@ -33,8 +33,8 @@ const title =
   <body
     class="bg-off-white text-off-black dark:bg-off-black dark:text-off-white flex min-h-screen flex-col text-base"
   >
-    <div>
-      <header
+    <header>
+      <div
         class="mx-auto flex max-w-(--breakpoint-lg) items-center justify-between p-1"
       >
         <a href="/" aria-label="Home">
@@ -50,13 +50,13 @@ const title =
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
     <main class="flex flex-1 flex-col">
       <slot />
     </main>
-    <div>
-      <footer
+    <footer>
+      <div
         class="mx-auto max-w-(--breakpoint-lg) justify-between p-1 text-center text-sm sm:flex sm:text-start"
       >
         <address class="not-italic">
@@ -74,7 +74,7 @@ const title =
           <br />
           CVR: 34151962
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
