@@ -9,6 +9,8 @@ article {
     @apply mb-0;
   }
 
+  @apply hyphens-auto sm:hyphens-manual;
+
   h1,
   h2,
   h3 {
