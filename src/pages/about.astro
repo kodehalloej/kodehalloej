@@ -5,33 +5,31 @@ const title = "About";
 ---
 
 <MainLayout title={title}>
-  <div>
-    <article
-      class="mx-auto mt-1 mb-2 max-w-(--breakpoint-md) px-1 hyphens-auto sm:hyphens-manual md:mt-1.5 md:mb-2.5 md:px-2"
+  <article
+    class="mx-auto mt-1 mb-2 max-w-(--breakpoint-md) px-1 hyphens-auto sm:hyphens-manual md:mt-1.5 md:mb-2.5 md:px-2"
+  >
+    <h1
+      class="text-red dark:text-green-light mb-0.5 text-2xl font-medium tracking-tight md:text-3xl"
     >
-      <h1
-        class="text-red dark:text-green-light mt-0 mb-0.75 text-2xl font-medium tracking-tight md:text-3xl"
-      >
-        {title}
-      </h1>
-      <p class="mb-1">
-        I’m a backend developer based in Denmark with over 20 years of
-        experience in .NET and C#. I specialize in enterprise-grade solutions
-        using Sitecore and Umbraco. My work typically involves a lot of coding
-        👨‍💻, system integrations 🧩, and some infrastructure setup 🛠️.
-      </p>
-      <p class="mb-1">
-        Over the years, I’ve worked with clients across various sectors —
-        including energy 🔋, logistics 🚚, education 🎓, government 🏛️, and
-        member organizations 👥. I’m used to working in agile environments and
-        adapt quickly to each client’s preferred setup.
-      </p>
-      <p>
-        I started out as a fullstack developer, so I know my way around frontend
-        technologies as well. It’s been especially helpful when collaborating
-        with frontend teams. I still enjoy doing some frontend development on
-        the side — like this site, made with Astro 🚀 and Tailwind CSS 🎨.
-      </p>
-    </article>
-  </div>
+      {title}
+    </h1>
+    <p class="mb-1">
+      I’m a backend developer based in Denmark with over 20 years of experience
+      in .NET and C#. I specialize in enterprise-grade solutions using Sitecore
+      and Umbraco. My work typically involves a lot of coding 👨‍💻, system
+      integrations 🧩, and some infrastructure setup 🛠️.
+    </p>
+    <p class="mb-1">
+      Over the years, I’ve worked with clients across various sectors —
+      including energy 🔋, logistics 🚚, education 🎓, government 🏛️, and member
+      organizations 👥. I’m used to working in agile environments and adapt
+      quickly to each client’s preferred setup.
+    </p>
+    <p>
+      I started out as a fullstack developer, so I know my way around frontend
+      technologies as well. It’s been especially helpful when collaborating with
+      frontend teams. I still enjoy doing some frontend development on the side
+      — like this site, made with Astro 🚀 and Tailwind CSS 🎨.
+    </p>
+  </article>
 </MainLayout>
