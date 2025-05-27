@@ -16,71 +16,78 @@ const latestPost = posts.length > 0 ? posts[0] : null;
 ---
 
 <MainLayout>
-  <div class="my-auto mt-1 mb-2 md:mt-1.5 md:mb-2.5">
-    <section
-      class="mx-auto mb-1.5 max-w-(--breakpoint-sm) px-1 text-center last:mb-0 md:px-2"
-    >
-      <article>
-        <div class="mb-0.5">
-          <Picture
-            src={avatar}
-            alt="Daniel Møller Kristensen"
-            width="300"
-            densities={[1, 2, 3]}
-            formats={["avif", "webp"]}
-            fallbackFormat="jpg"
-            class="mx-auto w-9 rounded-full"
-            decoding="sync"
-            loading="eager"
-          />
-        </div>
-        <h1
-          class="text-red dark:text-green-light mb-0.5 text-4xl font-medium tracking-tight"
-        >
-          Hi, I’m Daniel
-        </h1>
-        <p class="mb-0.5 text-lg">
-          I’m a backend developer from Denmark. I specialize in Sitecore,
-          Umbraco, C#, and .NET.
-        </p>
-        <ul class="flex justify-center gap-0.75 text-3xl">
-          {
-            socials.map((social) => {
-              return (
-                <li>
-                  <Social name={social.data.name} url={social.data.url} />
-                </li>
-              );
-            })
-          }
-        </ul>
-      </article>
-    </section>
-    {
-      latestPost && (
-        <section class="mx-auto max-w-(--breakpoint-sm) px-1 text-center md:px-2">
-          <h2 class="text-red dark:text-green-light mb-0.5 text-xl font-medium tracking-tight">
-            Latest Post
-          </h2>
-          <article>
-            <time datetime={getPubDate(latestPost.data.pubDate).toISOString()}>
-              {getPubDate(latestPost.data.pubDate).toLocaleDateString("en-US", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })}
-            </time>
-            <h3 class="text-red dark:text-green-light text-lg font-medium tracking-tight">
-              <a
-                href={`/blog/${latestPost.id}`}
-                class="text-blue visited:text-purple hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:visited:text-grey-light dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+  <div class="my-auto">
+    <div class="mt-1 mb-2 md:mt-1.5 md:mb-2.5">
+      <section
+        class="mx-auto mb-1.5 max-w-(--breakpoint-sm) px-1 text-center last:mb-0 md:px-2"
+      >
+        <article>
+          <div class="mb-0.5">
+            <Picture
+              src={avatar}
+              alt="Daniel Møller Kristensen"
+              width="300"
+              densities={[1, 2, 3]}
+              formats={["avif", "webp"]}
+              fallbackFormat="jpg"
+              class="mx-auto w-9 rounded-full"
+              decoding="sync"
+              loading="eager"
+            />
+          </div>
+          <h1
+            class="text-red dark:text-green-light mb-0.5 text-4xl font-medium tracking-tight"
+          >
+            Hi, I’m Daniel
+          </h1>
+          <p class="mb-0.5 text-lg">
+            I’m a backend developer from Denmark. I specialize in Sitecore,
+            Umbraco, C#, and .NET.
+          </p>
+          <ul class="flex justify-center gap-0.75 text-3xl">
+            {
+              socials.map((social) => {
+                return (
+                  <li>
+                    <Social name={social.data.name} url={social.data.url} />
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </article>
+      </section>
+      {
+        latestPost && (
+          <section class="mx-auto max-w-(--breakpoint-sm) px-1 text-center md:px-2">
+            <h2 class="text-red dark:text-green-light mb-0.5 text-xl font-medium tracking-tight">
+              Latest Post
+            </h2>
+            <article>
+              <time
+                datetime={getPubDate(latestPost.data.pubDate).toISOString()}
               >
-                {latestPost.data.title}
-              </a>
-            </h3>
-          </article>
-        </section>
-      )
-    }
+                {getPubDate(latestPost.data.pubDate).toLocaleDateString(
+                  "en-US",
+                  {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  },
+                )}
+              </time>
+              <h3 class="text-red dark:text-green-light text-lg font-medium tracking-tight">
+                <a
+                  href={`/blog/${latestPost.id}`}
+                  class="text-blue visited:text-purple hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:visited:text-grey-light dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
+                >
+                  {latestPost.data.title}
+                </a>
+              </h3>
+            </article>
+          </section>
+        )
+      }
+    </div>
   </div>
 </MainLayout>
