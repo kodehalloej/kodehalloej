@@ -6,13 +6,6 @@ import avatar from "../images/avatar.jpg";
 import Social from "../components/Social.astro";
 
 const socials = await getCollection("socials");
-
-const getPubDate = (postPubDate?: Date) => postPubDate ?? new Date(0);
-const posts = (await getCollection("posts")).sort(
-  (x, y) =>
-    getPubDate(y.data.pubDate).getTime() - getPubDate(x.data.pubDate).getTime(),
-);
-const latestPost = posts.length > 0 ? posts[0] : null;
 ---
 
 <MainLayout>
@@ -57,37 +50,6 @@ const latestPost = posts.length > 0 ? posts[0] : null;
           </ul>
         </article>
       </section>
-      {
-        latestPost && (
-          <section class="mx-auto max-w-(--breakpoint-sm) px-1 text-center md:px-2">
-            <h2 class="text-red dark:text-green-light mb-0.25 text-xl font-medium tracking-tight">
-              Latest Post
-            </h2>
-            <article>
-              <time
-                datetime={getPubDate(latestPost.data.pubDate).toISOString()}
-              >
-                {getPubDate(latestPost.data.pubDate).toLocaleDateString(
-                  "en-US",
-                  {
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                  },
-                )}
-              </time>
-              <h3 class="text-red dark:text-green-light text-lg font-medium tracking-tight">
-                <a
-                  href={`/blog/${latestPost.id}`}
-                  class="text-blue visited:text-purple hover:bg-blue focus:bg-blue active:bg-red dark:text-cyan dark:visited:text-grey-light dark:hover:bg-cyan dark:focus:bg-cyan dark:active:bg-yellow underline hover:text-white focus:text-white active:text-white dark:hover:text-black dark:focus:text-black dark:active:text-black"
-                >
-                  {latestPost.data.title}
-                </a>
-              </h3>
-            </article>
-          </section>
-        )
-      }
     </div>
   </div>
 </MainLayout>
