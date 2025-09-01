@@ -10,16 +10,16 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
-    "@astrojs/sitemap": "^3.4.1",
-    "@tailwindcss/vite": "^4.1.10",
-    "astro": "^5.9.2",
-    "sharp": "^0.34.2",
-    "tailwindcss": "^4.1.10"
+    "@astrojs/sitemap": "^3.6.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.13.8",
+    "sharp": "^0.34.4",
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.12"
+    "prettier-plugin-tailwindcss": "^0.6.14"
   },
-  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
+  "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef"
 }
