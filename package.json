@@ -11,10 +11,12 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.13",
     "@astrojs/sitemap": "^3.6.0",
-    "@tailwindcss/vite": "^4.1.16",
-    "astro": "^5.15.2",
-    "sharp": "^0.34.4",
-    "tailwindcss": "^4.1.16"
+    "@tailwindcss/vite": "^4.1.17",
+    "astro": "^5.15.4",
+    "node-addon-api": "^8.5.0",
+    "node-gyp": "^11.5.0",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
