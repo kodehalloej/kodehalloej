@@ -9,19 +9,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.18",
+    "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
-    "@tailwindcss/vite": "^4.3.0",
+    "@tailwindcss/vite": "^4.3.2",
     "astro": "^5.18.2",
-    "node-addon-api": "^8.8.0",
+    "node-addon-api": "^8.9.0",
     "node-gyp": "^12.4.0",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
-    "prettier": "^3.8.3",
+    "prettier": "^3.9.5",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.4"
   },
-  "packageManager": "pnpm@10.34.1+sha512.b58fbde6dca66a929538021581f648b4570b6ca19b18e7cbd7f2c07a7b24454155388dacdf08f2af3678e88a6d1fe04f9d609df24bf51735a060ea041b374ab7"
+  "packageManager": "pnpm@10.34.5+sha512.a4ee05f2f73658255bd6a89859c065a45c28a57daefae2c893a168ee2b73168c37b91e83e57ea67654ad03f03031746430e8bce38e362e042605fb8abc80192e"
 }
